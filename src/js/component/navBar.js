@@ -3,7 +3,7 @@ import React from "react";
 const NavBar = () => {
 	return (
 		<nav
-			className="navbar navbar-expand-lg navbar-light bg-dark"
+			className="navbar navbar-expand-lg navbar-light bg-dark position-sticky sticky-top"
 			style={{ width: "100%" }}>
 			<a className="navbar-brand text-white " href="#">
 				Start Bootstrap
