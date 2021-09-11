@@ -1,24 +1,11 @@
 import React from "react";
 
-const anchors = [
-	<a className="nav-link active text-white" href="#" key="1">
-		Home <span className="sr-only">(current)</span>
-	</a>,
-	<a className="nav-link text-secondary" href="#" key="2">
-		About
-	</a>,
-	<a className="nav-link text-secondary" href="#" key="3">
-		Services
-	</a>,
-	<a className="nav-link text-secondary" href="#" key="4">
-		Contact
-	</a>
-];
-
 const NavBar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light bg-dark">
-			<a className="navbar-brand text-white ml-3" href="#">
+		<nav
+			className="navbar navbar-expand-lg navbar-light bg-dark"
+			style={{ width: "100%" }}>
+			<a className="navbar-brand text-white " href="#">
 				Start Bootstrap
 			</a>
 			<button
@@ -32,9 +19,22 @@ const NavBar = () => {
 				<span className="navbar-toggler-icon"></span>
 			</button>
 			<div
-				className="collapse navbar-collapse justify-content-end mr-3"
+				className="collapse navbar-collapse justify-content-end "
 				id="navbarNavAltMarkup">
-				<div className="navbar-nav">{anchors}</div>
+				<div className="navbar-nav">
+					<a className="nav-link active text-white" href="#">
+						Home <span className="sr-only">(current)</span>
+					</a>
+					<a className="nav-link text-secondary" href="#">
+						About
+					</a>
+					<a className="nav-link text-secondary" href="#">
+						Services
+					</a>
+					<a className="nav-link text-secondary" href="#">
+						Contact
+					</a>
+				</div>
 			</div>
 		</nav>
 	);

@@ -1,11 +1,20 @@
 import React from "react";
+import cardContainer from "./cardContainer";
 import NavBar from "./navBar";
-import CardsContainer from "./cardContainer";
-import Welcome from "./welcome";
+import CardContainer from "./cardContainer";
+import JumbotronContainer from "./jumbotronContainer";
+import Footer from "./footer";
 
 //create your first component
 const Home = () => {
-	return [<NavBar />, <Welcome />, <CardsContainer />];
+	return (
+		<>
+			<NavBar />
+			<JumbotronContainer />
+			<CardContainer />
+			<Footer />
+		</>
+	);
 };
 
 export default Home;
